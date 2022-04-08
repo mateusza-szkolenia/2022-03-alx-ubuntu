@@ -10,5 +10,5 @@
 
 ## Adres IP
 
-![re1](regexp3.png)
+![re1](regexp3-ip.png)
 
