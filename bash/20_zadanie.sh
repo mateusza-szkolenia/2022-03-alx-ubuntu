@@ -12,7 +12,10 @@ then
 else
 	echo "Niepełnoletni."
 	((zailelat = 18 - wiek))
-	echo "Do zobaczenia za $zailelat lat"
+	printf "Do zobaczenia za %d lat\n" "$zailelat"
+	printf "Do zobaczenia za [%10d] lat\n" "$zailelat"
+	printf "Do zobaczenia za [%-10d] lat\n" "$zailelat"
+	printf "Do zobaczenia za [%010d] lat\n" "$zailelat"
 fi
 
 if test "$wiek" -ge 30
