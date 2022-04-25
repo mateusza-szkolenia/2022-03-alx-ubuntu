@@ -1,3 +1,5 @@
+#!/bin/bash
+
 
 # wyświetl wersję systemu operacyjnego
 uname -a
