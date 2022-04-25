@@ -1,0 +1,8 @@
+Szkolenie Ubuntu
+================
+
+Konto: kurs
+Katalog domowy: /home/kurs
+
+Koniec
+----------------
