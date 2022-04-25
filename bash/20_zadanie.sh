@@ -4,18 +4,18 @@ teraz=$(date +%Y)
 
 read -p "Podaj rok urodzenia: " rokur
 
-wiek=$((teraz - rokur))
+((wiek = teraz - rokur))
 
-if [[ "$wiek" -ge 18 ]]
+if ((wiek >= 18))
 then
 	echo "Jesteś pełnoletni"
 else
 	echo "Niepełnoletni."
-	zailelat=$((18 - wiek))
+	((zailelat = 18 - wiek))
 	echo "Do zobaczenia za $zailelat lat"
 fi
 
-if [[ "$wiek" -ge 30 ]]
+if test "$wiek" -ge 30
 then
 	echo "Możesz kandydować na senatora"
 else
