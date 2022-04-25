@@ -27,12 +27,13 @@ else
 	echo "Do zobaczenia za $zailelat lat"
 fi
 
-if [[ "$wiek" -ge 35 ]]
-then
-	echo "Możesz kandydować na prezydenta"
-else
-	echo "Nie możesz"
-	zailelat=$((35 - wiek))
-	echo "Do zobaczenia za $zailelat lat"
-fi
+[[ "$wiek" -ge 35 ]] && echo "Możesz kandydować na prezydenta" || echo "Nie możesz kandydować. Poczekaj $((35 - wiek)) lat"
+
+
+# a  b  a || b
+# ------------
+# F  F    F
+# F  T    T
+# T  F    T
+# T  T    T
 
