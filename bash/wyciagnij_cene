@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+
+import json
+import sys
+
+nazwapliku = sys.argv[1]
+
+with open(nazwapliku) as plik:
+    odp = json.load(plik)
+    cena = odp[0]['cena']
+    cena = int(cena)
+    print(cena)
